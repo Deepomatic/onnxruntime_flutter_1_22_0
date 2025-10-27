@@ -1,20 +1,20 @@
 PODS:
   - Flutter (1.0.0)
-  - onnxruntime (0.0.1):
+  - onnxruntime-c (1.22.0)
+  - onnxruntime-objc (1.22.0):
+    - onnxruntime-objc/Core (= 1.22.0)
+  - onnxruntime-objc/Core (1.22.0):
+    - onnxruntime-c (= 1.22.0)
+  - onnxruntime_v2 (0.0.1):
     - Flutter
-    - onnxruntime-objc (= 1.15.1)
-  - onnxruntime-c (1.15.1)
-  - onnxruntime-objc (1.15.1):
-    - onnxruntime-objc/Core (= 1.15.1)
-  - onnxruntime-objc/Core (1.15.1):
-    - onnxruntime-c (= 1.15.1)
+    - onnxruntime-objc (= 1.22.0)
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - onnxruntime (from `.symlinks/plugins/onnxruntime/ios`)
+  - onnxruntime_v2 (from `.symlinks/plugins/onnxruntime_v2/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 SPEC REPOS:
@@ -25,18 +25,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  onnxruntime:
-    :path: ".symlinks/plugins/onnxruntime/ios"
+  onnxruntime_v2:
+    :path: ".symlinks/plugins/onnxruntime_v2/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
 
 SPEC CHECKSUMS:
-  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  onnxruntime: e9346181d75b8dea8733bdae512a22c298962e00
-  onnxruntime-c: ebdcfd8650bcbd10121c125262f99dea681b92a3
-  onnxruntime-objc: ae7acec7a3d03eaf072d340afed7a35635c1c2a6
-  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  onnxruntime-c: 7f778680e96145956c0a31945f260321eed2611a
+  onnxruntime-objc: 83d28b87525bd971259a66e153ea32b5d023de19
+  onnxruntime_v2: 58fc2252a7feb83bf2df737cd48e3b27afe5ef86
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.16.2
